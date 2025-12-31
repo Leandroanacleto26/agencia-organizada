@@ -1,0 +1,17 @@
+@use 'variaveis';
+@use 'mixins';
+
+.btn {
+  @include mixins.botao-base(transparent, variaveis.$cor-branca);
+
+  &--primary {
+    @include mixins.botao-base(
+      variaveis.$cor-primaria,
+      variaveis.$cor-branca
+    );
+
+    &:hover {
+      background-color: darken(variaveis.$cor-primaria, 10%);
+    }
+  }
+}
