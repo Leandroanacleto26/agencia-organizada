@@ -1,29 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agência Criativa Web</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos.css" />
+
 </head>
 <body>
 
+  <!-- Cabeçalho -->
   <header class="header">
-    <div class="header__container container">
-      <h1 class="header__logo">Agência Criativa</h1>
-      <nav class="header__nav">
-        <a class="header__link" href="#">Início</a>
-        <a class="header__link" href="#">Serviços</a>
-        <a class="header__link" href="#">Contato</a>
-      </nav>
-    </div>
+    <div class="logo">Agência Criativa Web</div>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero__content container">
-      <h2 class="hero__title">Criamos experiências digitais</h2>
-      <p class="hero__text">Design moderno e soluções eficientes.</p>
-      <a href="#" class="btn btn--primary">Saiba mais</a>
+  <!-- Home -->
+  <section id="home" class="home">
+    <h1>Transformamos ideias em experiências digitais</h1>
+    <p>Design moderno, responsivo e focado em resultados.</p>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+      Somos uma agência de design digital especializada em criar soluções
+      criativas, modernas e eficientes para marcas que desejam se destacar
+      no ambiente digital.
+    </p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos-grid">
+      <div class="card">Design Gráfico</div>
+      <div class="card">Desenvolvimento Web</div>
+      <div class="card">Branding</div>
+      <div class="card">UX/UI Design</div>
+      <div class="card">Marketing Digital</div>
+      <div class="card">Identidade Visual</div>
     </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="depoimento">
+      <p>“A agência transformou completamente nossa presença online.”</p>
+      <span>- Cliente Fictício 1</span>
+    </div>
+    <div class="depoimento">
+      <p>“Equipe criativa, profissional e extremamente competente.”</p>
+      <span>- Cliente Fictício 2</span>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@agenciacriativaweb.com</p>
+    <p>Telefone: (11) 99999-9999</p>
+    <form class="formulario">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer class="footer">
